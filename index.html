@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="./styles.css" rel="stylesheet">
+  <title>City Blossom – Bootstrap test site</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light fixed-top navbar-expand-lg main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <iconify-icon icon="mdi:webhook" style="margin-right:2px; vertical-align: middle;" width="24px"></iconify-icon>
+        City Blossom</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarNav" class="navbar-collapse collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#intouch">Get in touch</a></li>
+        </ul>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
+
+  <div id="main-hero">
+    <picture>
+      <source media="(max-width: 480px)" srcset="./img/city-480w.jpg" />
+      <source media="(max-width: 799px)" srcset="./img/city-800w.jpg" />
+      <source media="(min-width: 800px)" srcset="./img/city.jpg" />
+      <img src="./img/city.jpg" alt="City park" class="img-fluid" />
+    </picture>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>True innovation in city architecture!</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni neque laboriosam esse dolor
+          officia dicta provident tenetur quam quos ad voluptatum optio quasi deserunt officiis veniam, dolore
+          necessitatibus fugit! Nostrum!</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+  </div>
+
+  <section class="container" id="about">
+    <h1>About us</h1>
+    <div class="fadein">
+      <p class="lead">
+        An 'About Us' page is a spot for your founding story, a place to show off your business wins, and a sales page
+        that answers the most pressing question new customers have about your business.
+      </p>
+      <p class="lead">
+        What an 'About Us' page should be is a goal-oriented sales page, one that focuses on highlighting the biggest
+        selling points of your story and brand at the top of the page, making a strong first impression on curious
+        customers
+      </p>
+      <p class="lead">
+        In Shopify’s customer trust research, we found that shoppers navigate to an About Us page to learn more about
+        the brand and the people behind the products. Your 'About Page' should address those two curiosities shoppers
+        have to help with decision making.
+      </p>
+      <p class="lead">
+        Shoppers are also interested in a company’s mission. They’ll use the About Us page to determine if they share
+        core values with the business and to decide if they want to shop with the business or not.
+      </p>
+    </div>
+  </section>
+
+  <section class="container" id="contacts">
+    <h1>Contacts</h1>
+    <div class="row">
+      <div class="col-sm-4 card border-0 text-center fadein fade-in-queue">
+        <div class="card-body">
+          <iconify-icon icon="mdi:speedometer" width="5em" class="icon"></iconify-icon>
+          <h5 class="card-title">John Sand</h5>
+          <p class="card-text">Beatae hic voluptate expedita, ab obcaecati perferendis voluptatum sequi quis corrupti
+            nesciunt.</p>
+        </div>
+      </div>
+      <div class="col-sm-4 card border-0 text-center fadein fade-in-queue">
+        <div class="card-body">
+          <iconify-icon icon="mdi:adjust" width="5em" class="icon"></iconify-icon>
+          <h5 class="card-title">Dick Smith</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus cumque
+            laborum quod rem quaerat excepturi sint tempora. </p>
+        </div>
+      </div>
+      <div class="col-sm-4 card border-0 text-center fadein fade-in-queue">
+        <div class="card-body">
+          <iconify-icon icon="mdi:white-balance-sunny" width="5em" class="icon"></iconify-icon>
+          <h5 class="card-title">Lucy Lee</h5>
+          <p class="card-text">Beatae hic voluptate expedita, ab obcaecati perferendis voluptatum sequi quis corrupti
+            nesciunt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="intouch">
+    <h1>Contact us</h1>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Your name</label>
+        <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter your name">
+        <p class="error">This field is required</p>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <p class="error">This field is required and should be a correct email</p>
+      </div>
+      <div class="form-group">
+        <label for="text">Message</label>
+        <textarea class="form-control" placeholder="Your message here" id="text" rows="3"></textarea>
+        <p class="error">This field is required</p>
+      </div>
+      <p class="sent">Message sent!</p>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <p>&copy; 2023 City Blossom, Inc.</p>
+        <ul class="nav">
+          <li class="nav-item"><a href="#"><iconify-icon width="2em" icon="mdi:linkedin"></iconify-icon></a></li>
+          <li class="nav-item"><a href="#"><iconify-icon width="2em" icon="mdi:instagram"></iconify-icon></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+  <script src="./index.js"></script>
+
+</body>
+
+</html>

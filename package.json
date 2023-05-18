@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.29.1"
+  },
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files \"index.html\" \"index.js\" \"styles.css\""
+  }
+}
